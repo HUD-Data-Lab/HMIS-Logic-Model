@@ -1170,12 +1170,6 @@
         <DataProperty IRI="#SexOffender"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#SexualOrientation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#SexualOrientationOther"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#SingleParent"/>
     </Declaration>
     <Declaration>
@@ -6586,14 +6580,6 @@
         <Class IRI="#EntrySSVF"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#SexualOrientation"/>
-        <Class IRI="#EntryRHY"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#SexualOrientationOther"/>
-        <Class IRI="#EntryRHY"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#SingleParent"/>
         <Class IRI="#EntrySSVF"/>
     </DataPropertyDomain>
@@ -8068,14 +8054,6 @@
     <DataPropertyRange>
         <DataProperty IRI="#SexOffender"/>
         <Datatype IRI="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#noYesMissing"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#SexualOrientation"/>
-        <Datatype IRI="#sexualOrientation"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#SexualOrientationOther"/>
-        <Datatype IRI="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#string100"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#SingleParent"/>
@@ -12406,26 +12384,6 @@ indicate the position of omitted digits
         <AnnotationProperty IRI="http://purl.org/dc/terms/identifier"/>
         <IRI>#SexOffender</IRI>
         <Literal>V7.K</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-        <IRI>#SexualOrientation</IRI>
-        <Literal>Sexual Orientation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/identifier"/>
-        <IRI>#SexualOrientation</IRI>
-        <Literal>R3.1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-        <IRI>#SexualOrientationOther</IRI>
-        <Literal>If other, please describe</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/identifier"/>
-        <IRI>#SexualOrientationOther</IRI>
-        <Literal>R3.A</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
