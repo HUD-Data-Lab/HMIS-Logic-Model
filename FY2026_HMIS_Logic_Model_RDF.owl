@@ -907,9 +907,9 @@
     
 
 
-    <!-- urn:hud:hmis:owl#hasAfilliation -->
+    <!-- urn:hud:hmis:owl#hasAffiliation -->
 
-    <owl:ObjectProperty rdf:about="urn:hud:hmis:owl#hasAfilliation">
+    <owl:ObjectProperty rdf:about="urn:hud:hmis:owl#hasAffiliation">
         <rdfs:domain rdf:resource="urn:hud:hmis:owl#Project"/>
         <rdfs:range rdf:resource="urn:hud:hmis:owl#Affiliation"/>
     </owl:ObjectProperty>
