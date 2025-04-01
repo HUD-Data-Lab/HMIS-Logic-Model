@@ -1288,7 +1288,7 @@
 
     <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/RBjHSQRI6m75omDsDoKvyjI">
         <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/R87OcrtMhus4Uy12wpiO3oc"/>
-        <rdfs:domain rdf:resource="urn:hud:hmis:owl#Enrollment"/>
+        <rdfs:domain rdf:resource="urn:hud:hmis:owl#EntrySSVF"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <terms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V10</terms:identifier>
         <rdfs:label>MentalHealthConsultation</rdfs:label>
