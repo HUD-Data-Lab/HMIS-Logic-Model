@@ -843,13 +843,6 @@
     </rdfs:Datatype>
     
 
-
-    <!-- urn:hud:hmis:owl#sexualOrientation -->
-
-    <rdfs:Datatype rdf:about="urn:hud:hmis:owl#sexualOrientation"/>
-    
-
-
     <!-- urn:hud:hmis:owl#sourceType -->
 
     <rdfs:Datatype rdf:about="urn:hud:hmis:owl#sourceType">
