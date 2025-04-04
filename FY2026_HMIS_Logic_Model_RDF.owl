@@ -2735,7 +2735,7 @@ Necessary for projects that operate across multiple CoCs for data export purpose
         <rdfs:domain rdf:resource="urn:hud:hmis:owl#ServiceFAReferral"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#fAAmountBase"/>
         <terms:description>Financial Assistance Amount</terms:description>
-        <terms:identifier>V3.2</terms:identifier>
+        <terms:identifier>V3.3</terms:identifier>
     </owl:DatatypeProperty>
     
 
@@ -2760,7 +2760,7 @@ Necessary for projects that operate across multiple CoCs for data export purpose
         <rdfs:domain rdf:resource="urn:hud:hmis:owl#ServiceFAReferral"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <terms:description>Start Date of Financial Assistance</terms:description>
-        <terms:identifier>V3.1</terms:identifier>
+        <terms:identifier>V3.2</terms:identifier>
         <rdfs:label>FAStartDate</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2927,7 +2927,7 @@ Necessary for projects that operate across multiple CoCs for data export purpose
     <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#HH5Plus">
         <rdfs:domain rdf:resource="urn:hud:hmis:owl#EntrySSVF"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#noYesMissing"/>
-        <terms:description>Household size of 5 or more requiring at least 3 bedrooms (due to age/gender mix)</terms:description>
+        <terms:description>Household size of 5 or more requiring at least 3 bedrooms (due to household composition)</terms:description>
         <terms:identifier>V7.P</terms:identifier>
     </owl:DatatypeProperty>
     
