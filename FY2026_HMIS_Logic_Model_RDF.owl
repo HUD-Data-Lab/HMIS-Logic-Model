@@ -1281,10 +1281,9 @@
     <!-- http://webprotege.stanford.edu/RBjHSQRI6m75omDsDoKvyjI -->
 
     <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/RBjHSQRI6m75omDsDoKvyjI">
-        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/R87OcrtMhus4Uy12wpiO3oc"/>
         <rdfs:domain rdf:resource="urn:hud:hmis:owl#EntrySSVF"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <terms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V10</terms:identifier>
+        <terms:identifier>V10</terms:identifier>
         <rdfs:label>MentalHealthConsultation</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -6634,7 +6633,7 @@ necessary to provide the person with the appropriate services to prevent further
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <CSVTableReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event</CSVTableReference>
+        <CSVTableReference>Event</CSVTableReference>
     </owl:Class>
     
 
@@ -6847,7 +6846,7 @@ necessary to provide the person with the appropriate services to prevent further
                 <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#string32"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <CSVTableReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Export</CSVTableReference>
+        <CSVTableReference>Export</CSVTableReference>
     </owl:Class>
     
 
@@ -7113,7 +7112,7 @@ necessary to provide the person with the appropriate services to prevent further
             </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description>To indicate the health status (general health, dental health, and mental health) per client.</terms:description>
-        <CSVTableReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HealthandDV</CSVTableReference>
+        <CSVTableReference>HealthandDV</CSVTableReference>
     </owl:Class>
     
 
@@ -7428,7 +7427,7 @@ necessary to provide the person with the appropriate services to prevent further
         </rdfs:subClassOf>
         <terms:description>includes data for 2.07 Bed and Unit Inventory Information.</terms:description>
         <terms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.07</terms:identifier>
-        <CSVTableReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inventory</CSVTableReference>
+        <CSVTableReference>Inventory</CSVTableReference>
     </owl:Class>
     
 
@@ -8089,7 +8088,7 @@ C. Identifies the number of runaway youth.</terms:description>
                 <owl:onDataRange rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#typeProvidedBase"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <CSVTableReference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Services</CSVTableReference>
+        <CSVTableReference>Services</CSVTableReference>
     </owl:Class>
     
 
@@ -8277,117 +8276,117 @@ C. Identifies the number of runaway youth.</terms:description>
      -->
 
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/">
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</terms:modified>
         <terms:publisher rdf:resource="http://purl.org/dc/aboutdcmi#DCMI"/>
         <terms:title xml:lang="en">Dublin Core Metadata Element Set, Version 1.1</terms:title>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</terms:modified>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
         <terms:description xml:lang="en">The guidelines for using names of persons or organizations as creators also apply to contributors.  Typically, the name of a Contributor should be used to indicate the entity.</terms:description>
-        <rdfs:label xml:lang="en">Contributor</rdfs:label>
-        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
-        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/contributor) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/contributor) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/coverage">
         <terms:description xml:lang="en">Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [[TGN](https://www.getty.edu/research/tools/vocabulary/tgn/index.html)]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges.</terms:description>
-        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/coverage) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <rdfs:comment xml:lang="en">The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.</rdfs:comment>
-        <rdfs:label xml:lang="en">Coverage</rdfs:label>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Coverage</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/coverage) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/date) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
-        <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
         <terms:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a &apos;/&apos; (slash) character.  Either the start or end date may be missing.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <rdfs:label xml:lang="en">Date</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/date) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
         <terms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
-        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/description) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
         <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <rdfs:label xml:lang="en">Description</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/description) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/format">
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].</terms:description>
-        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/format) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
-        <rdfs:label xml:lang="en">Format</rdfs:label>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <rdfs:comment xml:lang="en">The file format, physical medium, or dimensions of the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Format</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/format) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/identifier">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/identifier) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
-        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
         <terms:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/identifier) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/publisher">
-        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/publisher) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
-        <rdfs:label xml:lang="en">Publisher</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <terms:description xml:lang="en">Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/publisher) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/relation">
-        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/relation) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
-        <rdfs:label xml:lang="en">Relation</rdfs:label>
         <terms:description xml:lang="en">Recommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Relation</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/relation) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <terms:description xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
-        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/rights) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
-        <rdfs:label xml:lang="en">Rights</rdfs:label>
         <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Rights</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/rights) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/source">
-        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
         <terms:description xml:lang="en">The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <rdfs:label xml:lang="en">Source</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/subject">
-        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/subject) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <terms:description xml:lang="en">Typically, the subject will be represented using keywords, key phrases, or classification codes.  Recommended best practice is to use a controlled vocabulary.</terms:description>
-        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <rdfs:comment xml:lang="en">The topic of the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/subject) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/type">
-        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
-        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/type) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <rdfs:label xml:lang="en">Type</rdfs:label>
         <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/type) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://webprotege.stanford.edu/RDFb6idbQSbeN9XWT5FvRg5">
+        <terms:description>Project is a Coordinated Entry Access Point</terms:description>
         <terms:identifier>2.09.1</terms:identifier>
         <rdfs:label>AccessPoint</rdfs:label>
-        <terms:description>Project is a Coordinated Entry Access Point</terms:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://webprotege.stanford.edu/RZIjH0LLPPCevNNIFbKCV9">
         <rdfs:label>Export</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="urn:hud:hmis:owl#ConnectionWithSOAR">
-        <terms:identifier>P4.1</terms:identifier>
         <terms:description>Intended to determine if the client has been connected to the SSI/SSDI Outreach, Access, and Recovery (SOAR) program, regardless of whether that connection was established by the PATH provider or not.</terms:description>
+        <terms:identifier>P4.1</terms:identifier>
     </rdf:Description>
     <rdf:Description rdf:about="urn:hud:hmis:owl#MoveInDate">
         <terms:description>Housing Move-In Date</terms:description>
@@ -8403,5 +8402,5 @@ C. Identifies the number of runaway youth.</terms:description>
 
 
 
-<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
