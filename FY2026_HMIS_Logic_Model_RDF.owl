@@ -2818,17 +2818,6 @@ Necessary for projects that operate across multiple CoCs for data export purpose
     
 
 
-    <!-- urn:hud:hmis:owl#GenderNone -->
-
-    <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#GenderNone">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="urn:hud:hmis:owl#Client"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#raceGenderNone"/>
-        <terms:description>Gender None</terms:description>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- urn:hud:hmis:owl#GeneralHealthStatus -->
 
     <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#GeneralHealthStatus">
