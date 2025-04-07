@@ -843,6 +843,7 @@
     </rdfs:Datatype>
     
 
+
     <!-- urn:hud:hmis:owl#sourceType -->
 
     <rdfs:Datatype rdf:about="urn:hud:hmis:owl#sourceType">
@@ -2017,19 +2018,6 @@
     
 
 
-    <!-- urn:hud:hmis:owl#CulturallySpecific -->
-
-    <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#CulturallySpecific">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="urn:hud:hmis:owl#Client"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#noYesMissing"/>
-        <terms:description>Culturally Specific Identity (e.g., Two-Spirit)</terms:description>
-        <terms:identifier>3.06.1</terms:identifier>
-        <rdfs:label>CulturallySpecific</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- urn:hud:hmis:owl#CurrentEdStatus -->
 
     <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#CurrentEdStatus">
@@ -2291,31 +2279,6 @@
         <rdfs:range rdf:resource="urn:hud:hmis:owl#rentalSubsidyTypes"/>
         <terms:description>Rental Subsidy Type</terms:description>
         <terms:identifier>3.12.A</terms:identifier>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- urn:hud:hmis:owl#DifferentIdentity -->
-
-    <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#DifferentIdentity">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="urn:hud:hmis:owl#Client"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#noYesMissing"/>
-        <terms:description>Different Identity</terms:description>
-        <terms:identifier>3.06.1</terms:identifier>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- urn:hud:hmis:owl#DifferentIdentityText -->
-
-    <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#DifferentIdentityText">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="urn:hud:hmis:owl#Client"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#string100"/>
-        <terms:description>If Different Identity, Please Specify</terms:description>
-        <terms:identifier>3.06.A</terms:identifier>
-        <rdfs:label>DifferentIdentityText</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3461,19 +3424,6 @@ Necessary for projects that operate across multiple CoCs for data export purpose
     
 
 
-    <!-- urn:hud:hmis:owl#Man -->
-
-    <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#Man">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="urn:hud:hmis:owl#Client"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#noYesMissing"/>
-        <terms:description>Man (Boy, if child)</terms:description>
-        <terms:identifier>3.06.1</terms:identifier>
-        <rdfs:label>Man</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- urn:hud:hmis:owl#Medicaid -->
 
     <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#Medicaid">
@@ -3765,19 +3715,6 @@ Necessary for projects that operate across multiple CoCs for data export purpose
         <terms:description>No Veterans&apos;s Health Administration (VHA) Reason</terms:description>
         <terms:identifier>4.04.6A</terms:identifier>
         <rdfs:label>NoVHAReason</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- urn:hud:hmis:owl#NonBinary -->
-
-    <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#NonBinary">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="urn:hud:hmis:owl#Client"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#noYesMissing"/>
-        <terms:description>Non-Binary</terms:description>
-        <terms:identifier>3.06.1</terms:identifier>
-        <rdfs:label>NonBinary</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4289,18 +4226,6 @@ Necessary for projects that operate across multiple CoCs for data export purpose
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#projectType"/>
         <terms:description>Project Type</terms:description>
         <terms:identifier>2.02.6</terms:identifier>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- urn:hud:hmis:owl#Questioning -->
-
-    <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#Questioning">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="urn:hud:hmis:owl#Client"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#noYesMissing"/>
-        <terms:description>Questioning</terms:description>
-        <terms:identifier>3.06.1</terms:identifier>
     </owl:DatatypeProperty>
     
 
@@ -5006,18 +4931,6 @@ indicate the position of omitted digits
     
 
 
-    <!-- urn:hud:hmis:owl#Transgender -->
-
-    <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#Transgender">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="urn:hud:hmis:owl#Client"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#noYesMissing"/>
-        <terms:description>Transgender</terms:description>
-        <terms:identifier>3.06.1</terms:identifier>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- urn:hud:hmis:owl#TranslationNeeded -->
 
     <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#TranslationNeeded">
@@ -5330,19 +5243,6 @@ indicate the position of omitted digits
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#noYesMissing"/>
         <terms:description>White</terms:description>
         <terms:identifier>3.04.1</terms:identifier>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- urn:hud:hmis:owl#Woman -->
-
-    <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#Woman">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="urn:hud:hmis:owl#Client"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#noYesMissing"/>
-        <terms:description>Woman (Girl, if child)</terms:description>
-        <terms:identifier>3.06.1</terms:identifier>
-        <rdfs:label>Woman</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -8394,8 +8294,8 @@ C. Identifies the number of runaway youth.</terms:description>
         <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/coverage) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <rdfs:comment xml:lang="en">The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.</rdfs:comment>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <rdfs:label xml:lang="en">Coverage</rdfs:label>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
@@ -8414,8 +8314,8 @@ C. Identifies the number of runaway youth.</terms:description>
         <rdfs:label xml:lang="en">Description</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/format">
-        <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].</terms:description>
         <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/format) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
         <rdfs:label xml:lang="en">Format</rdfs:label>
         <rdfs:comment xml:lang="en">The file format, physical medium, or dimensions of the resource.</rdfs:comment>
@@ -8424,8 +8324,8 @@ C. Identifies the number of runaway youth.</terms:description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/identifier">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/identifier) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
-        <terms:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system.</terms:description>
         <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <terms:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
     </rdf:Description>
@@ -8447,8 +8347,8 @@ C. Identifies the number of runaway youth.</terms:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <terms:description xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/rights) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
         <rdfs:label xml:lang="en">Rights</rdfs:label>
         <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
@@ -8457,8 +8357,8 @@ C. Identifies the number of runaway youth.</terms:description>
         <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <terms:description xml:lang="en">The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
         <rdfs:label xml:lang="en">Source</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/subject">
@@ -8472,8 +8372,8 @@ C. Identifies the number of runaway youth.</terms:description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/type">
         <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
         <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/type) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
-        <rdfs:label xml:lang="en">Type</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
         <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
     </rdf:Description>
