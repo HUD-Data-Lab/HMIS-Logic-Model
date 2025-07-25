@@ -89,7 +89,7 @@ Table "Client" {
   "AmIndAKNative" integer [not null]
   "Asian" integer [not null]
   "BlackAfAmerican" integer [not null]
-  "HispanicLatinaeo" integer [not null]
+  "HispanicLatinao" integer [not null]
   "MidEastNAfrican" integer [not null]
   "NativeHIPacific" integer [not null]
   "White" integer [not null]

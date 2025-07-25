@@ -3000,15 +3000,15 @@ Necessary for projects that operate across multiple CoCs for data export purpose
     
 
 
-    <!-- urn:hud:hmis:owl#HispanicLatinaeo -->
+    <!-- urn:hud:hmis:owl#HispanicLatinao -->
 
-    <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#HispanicLatinaeo">
+    <owl:DatatypeProperty rdf:about="urn:hud:hmis:owl#HispanicLatinao">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="urn:hud:hmis:owl#Client"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/hmis-interop/xml/FY2022-latest/src/HUD_HMIS.xsd#noYesMissing"/>
-        <terms:description>Hispanic/Latina/e/o</terms:description>
+        <terms:description>Hispanic/Latina/o</terms:description>
         <terms:identifier>3.04.1</terms:identifier>
-        <rdfs:label>HispanicLatinaeo</rdfs:label>
+        <rdfs:label>HispanicLatinao</rdfs:label>
     </owl:DatatypeProperty>
     
 
