@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.hmislogicmodel.com/"
+     xml:base="http://www.hmislogicmodel.com/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.hmislogicmodel.com">
+        <owl:versionIRI rdf:resource="http://www.hmislogicmodel/2026/v2.com"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hmislogicmodel.com#HasHeadofHousehold -->
+
+    <owl:ObjectProperty rdf:about="http://www.hmislogicmodel.com#HasHeadofHousehold">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.hmislogicmodel.com#Household"/>
+        <rdfs:range rdf:resource="http://www.hmislogicmodel.com#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hmislogicmodel.com#HasHousehold -->
+
+    <owl:ObjectProperty rdf:about="http://www.hmislogicmodel.com#HasHousehold">
+        <owl:inverseOf rdf:resource="http://www.hmislogicmodel.com#HasHouseholdMember"/>
+        <rdfs:domain rdf:resource="http://www.hmislogicmodel.com#Person"/>
+        <rdfs:range rdf:resource="http://www.hmislogicmodel.com#Household"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hmislogicmodel.com#HasHouseholdMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.hmislogicmodel.com#HasHouseholdMember">
+        <rdfs:domain rdf:resource="http://www.hmislogicmodel.com#Household"/>
+        <rdfs:range rdf:resource="http://www.hmislogicmodel.com#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hmislogicmodel.com#Date_of_Birth -->
+
+    <owl:Class rdf:about="http://www.hmislogicmodel.com#Date_of_Birth">
+        <rdfs:subClassOf rdf:resource="http://www.hmislogicmodel.com#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hmislogicmodel.com#Household -->
+
+    <owl:Class rdf:about="http://www.hmislogicmodel.com#Household"/>
+    
+
+
+    <!-- http://www.hmislogicmodel.com#Name -->
+
+    <owl:Class rdf:about="http://www.hmislogicmodel.com#Name">
+        <rdfs:subClassOf rdf:resource="http://www.hmislogicmodel.com#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hmislogicmodel.com#Person -->
+
+    <owl:Class rdf:about="http://www.hmislogicmodel.com#Person"/>
+    
+
+
+    <!-- http://www.hmislogicmodel.com#Race_and_Ethnicity -->
+
+    <owl:Class rdf:about="http://www.hmislogicmodel.com#Race_and_Ethnicity">
+        <rdfs:subClassOf rdf:resource="http://www.hmislogicmodel.com#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hmislogicmodel.com#Relationship_to_Head_of_Household -->
+
+    <owl:Class rdf:about="http://www.hmislogicmodel.com#Relationship_to_Head_of_Household">
+        <rdfs:subClassOf rdf:resource="http://www.hmislogicmodel.com#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hmislogicmodel.com#Social_Security_Number -->
+
+    <owl:Class rdf:about="http://www.hmislogicmodel.com#Social_Security_Number">
+        <rdfs:subClassOf rdf:resource="http://www.hmislogicmodel.com#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.hmislogicmodel.com/h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.hmislogicmodel.com/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Household Cardinality</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.hmislogicmodel.com#HasHeadofHousehold"/>
+                        <swrl:argument1 rdf:resource="http://www.hmislogicmodel.com/h"/>
+                        <swrl:argument2 rdf:resource="http://www.hmislogicmodel.com/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.hmislogicmodel.com#HasHouseholdMember"/>
+                        <swrl:argument1 rdf:resource="http://www.hmislogicmodel.com/h"/>
+                        <swrl:argument2 rdf:resource="http://www.hmislogicmodel.com/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
