@@ -1,0 +1,997 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53/"
+     xml:base="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:hmis="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#hmis:"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#hmis:sourceoftruth -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#hmis:sourceoftruth"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#hasCollectionPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#hasCollectionPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#hasField -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#hasField"/>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#hasOption -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#hasOption"/>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#hasProjectType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#hasProjectType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#_ProjectType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#optionid -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#optionid">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#optionlabel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#optionlabel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#AftercareProvided_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#AftercareProvided_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#AnnualPercentAMI_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#AnnualPercentAMI_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Assessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Assessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#AssessmentLevel_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#AssessmentLevel_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#AssessmentStage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#AssessmentStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#InfoProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#AssessmentType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#AssessmentType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Availability_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Availability_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#BedNight_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#BedNight_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#CEParticipation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#CEParticipation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SubProject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#CMExitReason_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#CMExitReason_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ChildWelfareYears_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ChildWelfareYears_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Client -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Client">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ClientDoesntKnowClientPrefersNotToAnswerDataNotCollected_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ClientDoesntKnowClientPrefersNotToAnswerDataNotCollected_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#CoCRelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#CoCRelation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SubProject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#CountOfExchangeForSex_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#CountOfExchangeForSex_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#CurrentEdStatus_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#CurrentEdStatus_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#CurrentSchoolAttend_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#CurrentSchoolAttend_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DOBDataQuality_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DOBDataQuality_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DataCollectionStage_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DataCollectionStage_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DependentUnder6_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DependentUnder6_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DestinationSafeWorker_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DestinationSafeWorker_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DisabilityResponse_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DisabilityResponse_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DisabilityType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DisabilityType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DischargeStatus_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DischargeStatus_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DomainEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DomainEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ESBedType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ESBedType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#EarlyExitReason_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#EarlyExitReason_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Element -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Element">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#InfoEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#EmploymentType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#EmploymentType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Enrollment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Enrollment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#EnumField -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#EnumField">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#InfoEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#hasOption"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Event_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Event_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#EvictionHistory_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#EvictionHistory_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ExportDirective_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ExportDirective_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ExportPeriodType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ExportPeriodType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Funder_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Funder_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Funding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Funding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#GeneralHealthStatus_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#GeneralHealthStatus_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#GeographyType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#GeographyType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HMISParticipation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HMISParticipation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SubProject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HMISParticipationType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HMISParticipationType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HOPWAFinancialAssistance_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HOPWAFinancialAssistance_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HOPWAMedAssistedLivingFac_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HOPWAMedAssistedLivingFac_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HOPWAServices_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HOPWAServices_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HashStatus_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HashStatus_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Household -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Household">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HouseholdType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HouseholdType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HousingAssessment_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HousingAssessment_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HousingType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#HousingType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#IncarceratedAdult_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#IncarceratedAdult_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#InfoEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#InfoEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#InfoProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#InfoProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#InfoEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Inventory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Inventory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SubProject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#LastGradeCompleted_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#LastGradeCompleted_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#LengthOfStay_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#LengthOfStay_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#LiteralHomelessHistory_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#LiteralHomelessHistory_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#LivingSituation_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#LivingSituation_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#MentalHealthConsultation_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#MentalHealthConsultation_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#MilitaryBranch_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#MilitaryBranch_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#MonthsHomelessPastThreeYears_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#MonthsHomelessPastThreeYears_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#MostRecentEdStatus_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#MostRecentEdStatus_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#MovingOnAssistance_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#MovingOnAssistance_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NameDataQuality_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NameDataQuality_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NoADAPReason_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NoADAPReason_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NoMedicaidReason_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NoMedicaidReason_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NoYesClientDoesntKNowClientPrefersNotToAnswerDataNotCollected_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NoYesClientDoesntKNowClientPrefersNotToAnswerDataNotCollected_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NoYesDataNotCollected_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NoYesDataNotCollected_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NoYes_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NoYes_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NotEmployedReason_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#NotEmployedReason_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#PATHReferral_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#PATHReferral_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#PATHServices_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#PATHServices_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#PercentAMI_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#PercentAMI_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#PrioritizationStatus_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#PrioritizationStatus_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Project">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ProjectCompletionStatus_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ProjectCompletionStatus_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ProjectType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ProjectType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#RHYServices_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#RHYServices_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#RRHSubType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#RRHSubType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ReasonNoServices_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ReasonNoServices_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ReasonNotEnrolled_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ReasonNotEnrolled_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#RecordType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#RecordType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ReferralOutcome_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ReferralOutcome_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ReferralResult_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ReferralResult_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ReferralSource_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ReferralSource_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#RelationshipToHoH_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#RelationshipToHoH_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#RentalSubsidyType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#RentalSubsidyType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#InfoEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SSNDataQuality_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SSNDataQuality_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SSVFFinancialAssistance_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SSVFFinancialAssistance_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SSVFServices_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SSVFServices_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SSVFSubType3_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SSVFSubType3_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SSVFSubType4_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SSVFSubType4_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SSVFSubType5_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SSVFSubType5_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SchoolStatus_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SchoolStatus_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Sex_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Sex_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SourceType_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SourceType_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SubProject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SubProject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SubsidyInformation_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#SubsidyInformation_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#TCellSource_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#TCellSource_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#TargetPopulation_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#TargetPopulation_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#TimeToHousingLoss_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#TimeToHousingLoss_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#TimesHomelessPastThreeYears_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#TimesHomelessPastThreeYears_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#VAMCStation_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#VAMCStation_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ViralLoadAvailable_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ViralLoadAvailable_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#VoucherTracking_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#VoucherTracking_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#WhenOccurred_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#WhenOccurred_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#ResponseOption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#_ProjectType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#_ProjectType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#EnumField"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#_VeteranStatus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#_VeteranStatus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/64257/ontologies/2025/7/untitled-ontology-53#EnumField"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
