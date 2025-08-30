@@ -1,0 +1,85 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix hmis: <http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#> .
+@prefix : <http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-skos#> .
+
+# Concept Scheme
+:HMISConceptScheme a skos:ConceptScheme ;
+    skos:prefLabel "HMIS Data Elements Vocabulary"@en ;
+    skos:description "Controlled vocabulary for HMIS data elements aligned with HUD standards."@en .
+
+### 1. Veteran Status
+:VeteranStatus a skos:Concept ;
+    skos:inScheme :HMISConceptScheme ;
+    skos:prefLabel "Veteran Status"@en ;
+    skos:definition "Indicates whether the client is a Veteran"@en ;
+    skos:notation "3.07" ;
+    skos:exactMatch hmis:VeteranStatus .
+
+:VeteranYes a skos:Concept ;
+    skos:prefLabel "Yes"@en ;
+    skos:broader :VeteranStatus .
+
+:VeteranNo a skos:Concept ;
+    skos:prefLabel "No"@en ;
+    skos:broader :VeteranStatus .
+
+:VeteranClientDoesntKnow a skos:Concept ;
+    skos:prefLabel "Client Doesn't Know"@en ;
+    skos:broader :VeteranStatus .
+
+:VeteranClientPrefersNotToAnswer a skos:Concept ;
+    skos:prefLabel "Client prefers not to answer"@en ;
+    skos:broader :VeteranStatus .
+
+:VeteranDataNotCollected a skos:Concept ;
+    skos:prefLabel "Data not collected"@en ;
+    skos:broader :VeteranStatus .
+
+### 2. Sex
+:Sex a skos:Concept ;
+    skos:inScheme :HMISConceptScheme ;
+    skos:prefLabel "Sex"@en ;
+    skos:definition "The client’s self-identified sex at birth or current gender identity, as per HMIS standards."@en ;
+    skos:notation "4.21" ;
+    skos:exactMatch hmis:Sex .
+
+:Male a skos:Concept ;
+    skos:prefLabel "Male"@en ;
+    skos:broader :Sex .
+
+:Female a skos:Concept ;
+    skos:prefLabel "Female"@en ;
+    skos:broader :Sex .
+
+:ClientDoesntknow a skos:Concept ;
+    skos:prefLabel "Client doesn't know"@en ;
+    skos:broader :Sex .
+
+:ClientPrefersNotToAnswer a skos:Concept ;
+    skos:prefLabel "Client prefers not to answer"@en ;
+    skos:broader :Sex .
+
+:DataNotCollected a skos:Concept ;
+    skos:prefLabel "Data not collected"@en ;
+    skos:broader :Sex .
+
+### 3. Project Type
+:ProjectType a skos:Concept ;
+    skos:inScheme :HMISConceptScheme ;
+    skos:prefLabel "Project Type"@en ;
+    skos:definition "The type of project providing services, as defined by HUD HMIS standards."@en ;
+    skos:notation "2.02" ;
+    skos:exactMatch hmis:ProjectType .
+
+:EmergencyShelterEntryExit a skos:Concept ;
+    skos:prefLabel "Emergency Shelter - Entry Exit"@en ;
+    skos:broader :ProjectType .
+
+:PHRapidRehousing a skos:Concept ;
+    skos:prefLabel "PH - Rapid Re-housing"@en ;
+    skos:broader :ProjectType .
+
+:DayShelter a skos:Concept ;
+    skos:prefLabel "Day Shelter"@en ;
+    skos:broader :ProjectType .
+
