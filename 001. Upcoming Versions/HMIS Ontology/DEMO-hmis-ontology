@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology/"
+     xml:base="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:DEMO-hmis-ontology="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#"
+     xmlns:untitled-ontology-55="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology/v1.0"/>
+        <owl:imports rdf:resource="file:/C:/Users/61084/Desktop/NHDAP%20Data%20Lab/ICF%20Data%20Lab/HMIS-Logic-Model/001.%20Upcoming%20Versions/HMIS%20Ontology/vocabularies/hmis-vocabularies.ttl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#concept -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2004/02/skos/core#concept"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#LinkingProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#LinkingProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#UniversalDataElements -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#UniversalDataElements">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#hasDOB -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#hasDOB">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#UniversalDataElements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Client"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#DOB"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#hasEnrollment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#hasEnrollment">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#LinkingProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Client"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Enrollment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#hasExitDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#hasExitDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#UniversalDataElements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Enrollment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#hasIdentitySex -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#hasIdentitySex">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#UniversalDataElements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Client"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#hasProjectType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#hasProjectType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#LinkingProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Enrollment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#hasStartDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#hasStartDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#UniversalDataElements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Enrollment"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#StartDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#hasVeteranStatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#hasVeteranStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#UniversalDataElements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Client"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#DOB -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#DOB"/>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#ExitDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#ExitDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#StartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#StartDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#Project"/>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Client -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Client"/>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Enrollment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Enrollment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#TestClient1_scenario1pass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#TestClient1_scenario1pass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Client"/>
+        <DEMO-hmis-ontology:hasEnrollment rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-skos#EmergencyShelterEntryExit"/>
+        <DEMO-hmis-ontology:hasIdentitySex rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-skos#Male"/>
+        <untitled-ontology-55:hasVeteranStatus rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-skos#VeteranNo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#TestClient2_scenario1fail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#TestClient2_scenario1fail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Client"/>
+        <DEMO-hmis-ontology:hasEnrollment rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-skos#EmergencyShelterEntryExit"/>
+        <untitled-ontology-55:hasVeteranStatus rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-skos#VeteranYes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#TestClient3_scenario2pass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#TestClient3_scenario2pass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Client"/>
+        <DEMO-hmis-ontology:hasEnrollment rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-skos#DayShelter"/>
+        <untitled-ontology-55:hasVeteranStatus rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-skos#VeteranNo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#TestClient4_scenario2fail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-ontology#TestClient4_scenario2fail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/untitled-ontology-55#Client"/>
+        <DEMO-hmis-ontology:hasEnrollment rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-skos#DayShelter"/>
+        <DEMO-hmis-ontology:hasIdentitySex rdf:resource="http://www.semanticweb.org/61084/ontologies/2025/7/DEMO-hmis-skos#Female"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
