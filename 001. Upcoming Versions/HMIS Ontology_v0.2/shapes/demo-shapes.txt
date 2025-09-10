@@ -1,0 +1,68 @@
+@prefix : <http://example.org/hmis#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ES_RRH_ValidationShape a sh:NodeShape ;
+  sh:targetClass :Enrollment ;
+  sh:filterShape [
+    sh:property [
+      sh:path :enrolledInProject ;
+      sh:hasValue :ES, :RRH ;
+    ]
+  ] ;
+  sh:property [
+    sh:path :hasSex ;
+    sh:minCount 1 ;
+    sh:message "Sex is required for ES and RRH enrollments."
+  ] ;
+  sh:property [
+    sh:path :hasVeteranStatus ;
+    sh:minCount 1 ;
+    sh:message "Veteran Status is required for ES and RRH enrollments."
+  ] .
+
+:DayShelter_ValidationShape a sh:NodeShape ;
+  sh:targetClass :Enrollment ;
+  sh:filterShape [
+    sh:property [
+      sh:path :enrolledInProject ;
+      sh:hasValue :DayShelter ;
+    ]
+  ] ;
+  sh:property [
+    sh:path :hasVeteranStatus ;
+    sh:minCount 1 ;
+    sh:message "Veteran Status is required for Day Shelter enrollments."
+  ] .
+
+:DateValidationShape a sh:NodeShape ;
+  sh:targetClass :Enrollment ;
+  sh:rule [
+    a sh:SPARQLRule ;
+    sh:construct """
+      CONSTRUCT {
+        ?enrollment sh:violation "Start Date cannot be after Exit Date." .
+      }
+      WHERE {
+        ?enrollment :hasStartDate ?start ;
+                    :hasExitDate ?exit .
+        FILTER (?start > ?exit)
+      }
+    """ ;
+  ] .
+
+:VeteranAgeShape a sh:NodeShape ;
+  sh:targetClass :Client ;
+  sh:rule [
+    a sh:SPARQLRule ;
+    sh:construct """
+      CONSTRUCT {
+        ?client sh:violation "Client under 18 cannot be a veteran." .
+      }
+      WHERE {
+        ?client :hasAge ?age ;
+                :hasVeteranStatus :Yes .
+        FILTER (?age < 18)
+      }
+    """ ;
+  ] .

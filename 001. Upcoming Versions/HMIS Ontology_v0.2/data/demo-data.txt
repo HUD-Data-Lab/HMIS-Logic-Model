@@ -1,0 +1,43 @@
+@prefix : <http://example.org/hmis#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Client1 a :Client ;
+  :hasAge 25 ;
+  :hasSex :Male ;
+  :hasVeteranStatus :Yes ;
+  :hasEnrollment :Enroll1 .
+
+:Enroll1 a :Enrollment ;
+  :hasStartDate "2025-01-01"^^xsd:date ;
+  :hasExitDate "2025-01-10"^^xsd:date ;
+  :enrolledInProject :ES_Project .
+
+:ES_Project a :Project ;
+  :hasProjectType :ES .
+
+:Client2 a :Client ;
+  :hasAge 17 ;
+  :hasSex :Female ;
+  :hasVeteranStatus :Yes ;
+  :hasEnrollment :Enroll2 .
+
+:Enroll2 a :Enrollment ;
+  :hasStartDate "2025-02-01"^^xsd:date ;
+  :hasExitDate "2025-01-01"^^xsd:date ;
+  :enrolledInProject :RRH_Project .
+
+:RRH_Project a :Project ;
+  :hasProjectType :RRH .
+
+:Client3 a :Client ;
+  :hasAge 30 ;
+  :hasVeteranStatus :No ;
+  :hasEnrollment :Enroll3 .
+
+:Enroll3 a :Enrollment ;
+  :hasStartDate "2025-03-01"^^xsd:date ;
+  :hasExitDate "2025-03-15"^^xsd:date ;
+  :enrolledInProject :DayShelter_Project .
+
+:DayShelter_Project a :Project ;
+  :hasProjectType :DayShelter .
