@@ -1,4 +1,4 @@
-@prefix : <http://example.org/hmis#> .
+@prefix : <https://github.com/HUD-Data-Lab/HMIS-Logic-Model/blob/main/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.2/onto/demo-ontology.txt#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
