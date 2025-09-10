@@ -1,17 +1,18 @@
-@prefix : <http://example.org/hmis#> .
+@prefix : <https://raw.githubusercontent.com/HUD-Data-Lab/HMIS-Logic-Model/refs/heads/main/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/shapes/demo-shapes.ttl#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix onto: <https://raw.githubusercontent.com/HUD-Data-Lab/HMIS-Logic-Model/refs/heads/main/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.2/onto/demo-ontology.owl> .
 
 :ES_RRH_ValidationShape a sh:NodeShape ;
   sh:targetClass :Enrollment ;
   sh:filterShape [
     sh:property [
-      sh:path :enrolledInProject ;
-      sh:hasValue :ES, :RRH ;
+      sh:path onto:enrolledInProject ;
+      sh:hasValue onto:ES, onto:RRH ;
     ]
   ] ;
   sh:property [
-    sh:path :hasSex ;
+    sh:path onto:hasSex ;
     sh:minCount 1 ;
     sh:message "Sex is required for ES and RRH enrollments."
   ] ;
@@ -25,18 +26,18 @@
   sh:targetClass :Enrollment ;
   sh:filterShape [
     sh:property [
-      sh:path :enrolledInProject ;
-      sh:hasValue :DayShelter ;
+      sh:path onto:enrolledInProject ;
+      sh:hasValue onto:DayShelter ;
     ]
   ] ;
   sh:property [
-    sh:path :hasVeteranStatus ;
+    sh:path onto:hasVeteranStatus ;
     sh:minCount 1 ;
     sh:message "Veteran Status is required for Day Shelter enrollments."
   ] .
 
 :DateValidationShape a sh:NodeShape ;
-  sh:targetClass :Enrollment ;
+  sh:targetClass onto:Enrollment ;
   sh:rule [
     a sh:SPARQLRule ;
     sh:construct """
@@ -44,15 +45,15 @@
         ?enrollment sh:violation "Start Date cannot be after Exit Date." .
       }
       WHERE {
-        ?enrollment :hasStartDate ?start ;
-                    :hasExitDate ?exit .
+        ?enrollment onto:hasStartDate ?start ;
+                    onto:hasExitDate ?exit .
         FILTER (?start > ?exit)
       }
     """ ;
   ] .
 
 :VeteranAgeShape a sh:NodeShape ;
-  sh:targetClass :Client ;
+  sh:targetClass onto:Client ;
   sh:rule [
     a sh:SPARQLRule ;
     sh:construct """
@@ -60,8 +61,8 @@
         ?client sh:violation "Client under 18 cannot be a veteran." .
       }
       WHERE {
-        ?client :hasAge ?age ;
-                :hasVeteranStatus :Yes .
+        ?client onto:hasAge ?age ;
+                onto:hasVeteranStatus onto:Yes .
         FILTER (?age < 18)
       }
     """ ;
