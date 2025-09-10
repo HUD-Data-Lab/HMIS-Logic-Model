@@ -1,9 +1,10 @@
-@prefix : <http://https://github.com/HUD-Data-Lab/HMIS-Logic-Model/edit/main/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/onto/demo-ontology.ttl#> .
+@prefix : <https://raw.githubusercontent.com/HUD-Data-Lab/HMIS-Logic-Model/refs/heads/main/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/onto/demo-ontology.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+<https://raw.githubusercontent.com/HUD-Data-Lab/HMIS-Logic-Model/refs/heads/main/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/onto/demo-ontology.ttl> rdf:type owl:Ontology .
 :Client a owl:Class .
 :Enrollment a owl:Class .
 :Project a owl:Class .
