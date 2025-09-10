@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://hud-data-lab.github.io/HMIS-Logic-Model/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/ontology-runner.ttl>
+  a owl:Ontology ;
+  rdfs:label "HMIS Logic Model Ontology Runner v0.1" ;
+  owl:versionIRI <https://hud-data-lab.github.io/HMIS-Logic-Model/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/ontology-runner.ttl> ;
+
+  ## Core ontology: classes, properties, individuals
+  owl:imports <https://raw.githubusercontent.com/HUD-Data-Lab/HMIS-Logic-Model/main/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/onto/demo-ontology.ttl> ;
+
+  ## SHACL shapes: validation rules (manual upload recommended, but compatible with GitHub raw url)
+  owl:imports <https://raw.githubusercontent.com/HUD-Data-Lab/HMIS-Logic-Model/main/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/shapes/demo-shapes.ttl> ;
+
+  ## Sample data: individuals for testing
+  owl:imports <https://raw.githubusercontent.com/HUD-Data-Lab/HMIS-Logic-Model/main/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/data/demo-data.ttl> .
