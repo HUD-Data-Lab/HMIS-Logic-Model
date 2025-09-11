@@ -1,4 +1,4 @@
-@prefix : <http://example.org/hmis#> .
+@prefix : <https://hud-data-lab.github.io/HMIS-Logic-Model/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/ontology-runner.ttl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :Client1 a :Client ;

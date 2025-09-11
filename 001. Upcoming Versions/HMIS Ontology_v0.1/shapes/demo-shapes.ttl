@@ -1,4 +1,4 @@
-@prefix : <https://raw.githubusercontent.com/HUD-Data-Lab/HMIS-Logic-Model/refs/heads/main/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/shapes/demo-shapes.ttl#> .
+@prefix : <https://hud-data-lab.github.io/HMIS-Logic-Model/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/ontology-runner.ttl#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix onto: <https://raw.githubusercontent.com/HUD-Data-Lab/HMIS-Logic-Model/refs/heads/main/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.2/onto/demo-ontology.owl> .

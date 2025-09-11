@@ -1,4 +1,4 @@
-@prefix : <https://raw.githubusercontent.com/HUD-Data-Lab/HMIS-Logic-Model/refs/heads/main/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/onto/demo-ontology.ttl#> .
+@prefix : <https://hud-data-lab.github.io/HMIS-Logic-Model/001.%20Upcoming%20Versions/HMIS%20Ontology_v0.1/ontology-runner.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
