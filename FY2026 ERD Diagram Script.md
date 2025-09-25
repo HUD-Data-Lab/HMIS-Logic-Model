@@ -256,9 +256,6 @@ Table "Enrollment" {
   "TimesHomelessPastThreeYears" integer
   "MonthsHomelessPastThreeYears" integer
   "DisablingCondition" integer [not null]
-  "TranslationNeeded" integer
-  "PreferredLanguage" integer
-  "PreferredLanguageDifferent" "character varying(100)"
   "DateCreated" timestamp [not null]
   "DateUpdated" timestamp [not null]
   "UserID" "character varying(32)" [not null]
